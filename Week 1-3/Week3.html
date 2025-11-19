@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Dragon Boat Club at ASU</title>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap');
+
+
+        body {
+            background-color: #ffffff;
+            font-family: "Teko";
+            font-size: 25px;
+
+        }
+
+        .navhead {
+            display: flex;
+            gap: 40px;
+            padding-right: 2vw;
+        }
+
+        .headerWrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-right: 2vw;
+        }
+
+        /* Normal display of buttons*/
+        .navhead>.links>h1 {
+            background-color: transparent;
+            text-decoration: none;
+            margin-top: 1px;
+            border-width: 0px;
+            border-style: none;
+            color: #ffffff;
+            font-weight: 300;
+            font-size: clamp(2rem, 3vw, 3rem);
+            padding-right: 2vw;
+        }
+
+        /*buttons display when hovering*/
+        .navhead>.links>h1:hover {
+            text-decoration: underline;
+        }
+
+        /*buttons display when clicked on*/
+        .navhead>.links>h1:active {
+            color: #FFC627;
+            text-decoration: underline;
+        }
+
+        /*main header for the dragon boat clab at asu*/
+        #MainHeader {
+            position: fixed;
+
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+
+            background-color: #8C1D40;
+            color: #FFC627;
+            padding-left: 2vw;
+            padding-top: 5px;
+            margin-bottom: auto;
+            font-size: clamp(1rem, 2vw, 3rem);
+        }
+
+        h2 {
+            scroll-margin-top: 170px;
+            background-color: #8C1D40;
+            color: #FFC627;
+            padding-left: 20px;
+            padding-right: 30px;
+            margin-left: 0;
+            width: 100%;
+        }
+
+        h3 {
+            background-color: #ffffff;
+            color: #FFC627;
+            padding-left: 40px;
+        }
+
+        p,
+        ul {
+            position: static;
+            background-color: #ffffff;
+            font-family: "Roboto Condensed";
+            padding-left: 5vw;
+            padding-right: 5vw;
+        }
+
+        #About {
+            margin-top: 0;
+        }
+
+        /*First picture in website, the group picture*/
+        #SD_Group {
+            margin-top: 250px;
+            margin: 0;
+            padding: 0;
+        }
+
+        #SD_Group img {
+            height: auto;
+            width: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+
+        #BackgroundBoatPic {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            background-image: url("night_boat_pic.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #ContactSection {
+            background-image: url("night_boat_pic.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 53vw;
+        }
+
+        #ContactList {
+            background-color: rgba(255, 255, 255, .50);
+            margin-top: 15vw;
+            padding-top: 5vw;
+            padding-bottom: 5vw;
+            margin-right: 50vw;
+            text-align: center, left;
+            color: black;
+        }
+        /*Changing the group picture top margin*/
+        @media only screen and (max-width: 769px) {
+            #SD_Group {
+                margin-top: 150px;
+                padding: 0;
+            }
+
+            #SD_Group img {
+                height: auto;
+                width: 100%;
+                object-fit: cover;
+                display: block;
+            }
+        }
+        /* for even smaller screen*/
+        @media only screen and (max-width: 430px) {
+            body {
+                font-size: 18px;
+            }
+
+            .navhead {
+                gap: 20px;
+            }
+
+            .headerWrap {
+                padding-right: 10px;
+            }
+
+            .navhead>.links>h1 {
+                font-size: 20px;
+            }
+
+            #MainHeader {
+                padding-left: 10px;
+                font-size: 30px;
+            }
+
+            h2 {
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: 20px;
+            }
+
+            h3 {
+                padding-left: 20px;
+                font-size: 14px;
+                
+            }
+
+            p,
+            ul {
+                padding-left: 3vw;
+                padding-right: 3vw;
+            }
+
+            #SD_Group {
+                margin-top: 5vw;
+                padding: 0;
+            }
+            #ContactList li:first-child {
+                font-size: 10px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav>
+
+        <header id="MainHeader">
+            <div class="headerWrap">
+
+                <h1>The Dragon Boat Club at ASU</h1>
+
+                <div class="navhead">
+                    <a href="#About" class="links">
+                        <h1>About</h1>
+                    </a>
+                    <a href="#Events" class="links">
+                        <h1>Events</h1>
+                    </a>
+                    <a href="#Info" class="links">
+                        <h1>Info</h1>
+                    </a>
+                    <a href="#Contact" class="links">
+                        <h1>Contact</h1>
+                    </a>
+                </div>
+            </div>
+
+        </header>
+    </nav>
+
+    <section id="SD_Group">
+        <div>
+            <img src="SD_group_pic.jpg">
+        </div>
+    </section>
+
+    <section>
+        <header>
+            <h2 id="About">About</h2>
+        </header>
+
+
+        <p>Dragon Boating originally starting in China 2,000 years ago from folk traditions.</p>
+
+        <p>Now an international sport, in 2009 the Dragon Boat Club at Arizona State University was
+            founded.
+            This sport is all about community and personal development.</p>
+
+        <p>It is a great way to stay active and committed even for older generations in other divisions.
+            People from all different cultures bond over it.</p>
+
+        <p>Dragon Boat is a beginner friendly sport. The hard work that each member spends goes towards
+            racing for festivals.
+            The club gets the opportunity participate in many festivals like, San Diego,
+            Long Beach, Santa Fe Dam, and Vegas. The Tempe Town Lake Dragon Boat Festival.
+        </p>
+
+
+    </section>
+
+    <section>
+        <header>
+            <h2 id="Events">Events</h2>
+        </header>
+
+        <header>
+            <h3>Upcoming Events</h3>
+        </header>
+        <ul>
+            <li>The 20th Annual Tempe Town Lake Festival - March 28-29th, 2026</li>
+        </ul>
+        <header>
+            <h3>Recent Events</h3>
+        </header>
+        <ul>
+            <li>The Santa Fe Dam Dragon Boat Festival - October 4th, 2025</li>
+            <li>The San Diego Dragon Boat Festival - September 28-29th, 2025</li>
+            <ul>
+                <li>2nd place, B-Division, Mixed</li>
+            </ul>
+            <li>The Las Vegas Dragon Boat Festival - May 17-18th, 2025</li>
+            <ul>
+                <li>1st place, B-Division, Woman’s</li>
+            </ul>
+            <ul>
+                <li>1st place, B-Division, Mixed</li>
+            </ul>
+            <li>The Tempe Dragon Boat Festival - March 28-29th, 2025</li>
+            <ul>
+                <li>1st place, B-Division, Collegiate</li>
+            </ul>
+            <ul>
+                <li>4th place, A Division, Mixed </li>
+            </ul>
+        </ul>
+    </section>
+
+    <section>
+        <header>
+            <h2 id="Info">Info</h2>
+        </header>
+        <p>Dragon Boat is a sport that you race against others.
+            There are 20 people who paddle, and one person drumming,
+            and the other person steering the boat. In total, that would
+            be 22 people who would fit in a boat. Dragon Boat is an overall
+            solid sport that can be a fun hobby or an extreme push for people
+            that need community and Constancy in life.
+        </p>
+
+        <header>
+            <h3>Practice Times</h3>
+        </header>
+        Summer Times
+        <ul>
+            <li>Mondays - 6-8pm</li>
+            <li>Saturdays - 8-10am</li>
+        </ul>
+        Winter Times
+        <ul>
+            <li>Mondays - 6-8pm</li>
+            <li>Saturdays - 9-11am</li>
+        </ul>
+        <header>
+            <h3>What to Bring</h3>
+        </header>
+        <p>Bring water, sunblock, and yourself! This is optional, but a hat and sunglasses are nice during
+            morning practices. Paddling wise, life-jackets and paddles will be provided on site at the Tempe
+            Town Lake Marina.
+        </p>
+
+        <header>
+            <h3>Location + Carpool</h3>
+        </header>
+        <p>The Dragon Boat Club at ASU meets at the Tempe Town Lake Marina on time(start of practice).</p>
+
+        <p>Carpool is behind Two Hands on Apache Boulevard, provided by other members. So show up 15
+            minutes before practice.
+            If anything changes, message the discord.
+            <a href="https://maps.app.goo.gl/dMksNVLAPoXmx1tb6" target="Link">Location Link</a>
+        </p>
+
+
+    </section>
+
+    <section id="ContactSection">
+        <header>
+            <h2 id="Contact">Contact</h2>
+        </header>
+
+        <ul id="ContactList">
+            <li>Email - dragonboatasu@gmail.com</li>
+            <li><a href="https://linktr.ee/asudbc?utm_source=linktree_profile_share&ltsid=bf4069e7-709f-4f79-a58a-6d363663fe81"
+                    target="click here">Link-tree </a></a></li>
+        </ul>
+
+    </section>
+</body>
+
+</html>
