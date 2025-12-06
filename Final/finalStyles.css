@@ -1,0 +1,385 @@
+*{
+    --yellow:#FFC627;
+    --maroon: #8C1D40;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+     background-color: white;
+     margin: 0;
+     padding: 0;
+}
+
+.nav-header{
+    display: flex;
+    align-items: left;
+    background-color: var(--maroon);
+    color: var(--yellow);
+    font-family: "lalezar", sans-serif;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+
+
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.bar{
+    display: block;
+    width: 100%;
+    height: 7px;
+    margin: 3px 0;
+    background-color: var(--yellow);
+}
+
+.navStyle{
+    background-color: var(--maroon);
+    font-family: "lalezar", sans-serif;
+    position: fixed;
+    top: 80px;
+    left: 0px;
+    width: 25vw;
+    height: 100vh;
+    font-size: 2rem;
+    color: var(--yellow);
+    margin: 0px;
+    z-index: 20;
+    
+    
+}
+
+.navStyle > ul{
+    margin-top: 150px;
+    text-align: center;
+    color: var(--yellow);
+    font-size: 2em;
+    font-style: normal;
+    line-height: 100px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.navStyle > ul > li > a{
+    font-size: 2rem;
+    color: var(--yellow);
+    text-decoration: none;
+}
+
+.navStyle > ul > li > a:hover{
+    color: var(--yellow);
+    background-color: var(--maroon);
+   
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+.navStyle > ul > li > a:active{
+    color: white;
+     font-size: 2.2rem;
+}
+
+.container-content{
+    position: relative;
+    font-family: "lalezar", sans-serif;
+
+    
+  
+}
+
+h1{
+    font-family: "lalezar", sans-serif;
+    background-color: var(--maroon);
+    color: var(--yellow);
+    font-size: 3em;
+    letter-spacing: 3px;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    margin-top: 0;
+    padding-left: 2vw;
+    padding-top: 5px;
+    margin-bottom: auto;
+}
+
+h2{
+    font-family: "lalezar", sans-serif;
+    color: var(--yellow);
+    text-align: center;
+    letter-spacing: 2px;
+    font-style: normal;
+    font-size: 64px;
+    white-space: pre-line;
+}
+
+h3 {
+    color: var(--yellow);
+    letter-spacing: 2px;
+    font-style: normal;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.sparkyEdit img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    
+}
+ 
+#plan ul li {
+    color: var(--yellow);
+    letter-spacing: 2px;
+    font-style: normal;
+    font-size: 24px;
+    list-style-position: inside;
+    text-align: center;
+    margin-top: 0;
+
+}
+
+#plan > h2{
+    color: var(--maroon);
+}
+/*Code generated using Copilot*/
+/*Input: I want to make it to be that the list are hidden, 
+and when the mouse hover it shows the list and moves the other 
+h3 down to make space for the list. and also transition color to 
+maroon please.*/
+/* Output:
+#plan ul {
+  max-height: 0;              collapse 
+  overflow: hidden;            hide content 
+  transition: max-height 0.5s ease, margin 0.5s ease;
+  margin: 0;                   no space when hidden 
+}
+
+Headings default style 
+#plan h3 {
+  cursor: pointer;            show it's interactive 
+  transition: color 0.5s ease;
+}
+
+On hover: show list + change color 
+#plan h3:hover {
+  color: maroon;               transition to maroon 
+}
+
+Reveal the list when hovering over the heading 
+#plan h3:hover + ul {
+  max-height: 500px;          expand enough to fit content 
+  margin: 10px 0;              add spacing when visible 
+}
+With copiolt's help, revised code down below*/
+
+/* Default state: hide lists */
+#plan ul {
+  max-height: 0;              /* collapse */
+  overflow: hidden; 
+  margin: 0;            /* hide content */
+  transition: max-height 0.5s ease, margin 0.5s ease;
+                  /* no space when hidden */
+}
+
+/* Headings default style */
+#plan h3 {
+  cursor: pointer;            /* show it's interactive */
+  transition: color 1.0s ease;
+  line-height: 150px;
+}
+
+/* On hover: show list + change color */
+#plan h3:hover {
+  background-color: var(--maroon);
+  color: var(--yellow);  
+            /* transition to maroon */
+}
+
+/* Reveal the list when hovering over the heading */
+#plan h3:hover + ul {
+  max-height: 500px; 
+  background-color: var(--maroon);         /* expand enough to fit content */
+              /* add spacing when visible */
+  padding-bottom: 10px;
+  margin: 0px;
+  margin-left: 0px;
+}
+/*end of copilot*/
+
+section{
+     scroll-margin-top: 150px; 
+}
+#meals{
+    margin-top: 10px;
+    
+    margin-bottom: 250px;
+}
+#plan{
+    /*margin-top: 20px;*/
+    scroll-margin-top: 150px;
+    margin-bottom: 300px;
+}
+#calendar{
+    scroll-margin-top: 150px;
+    margin-bottom: 250px;
+}
+#MandG{
+    margin-top: 100px;
+    margin-bottom: 250px;
+}
+
+/*calendar work*/
+#calendar > h2 {
+    color: var(--maroon);
+}
+#thisWeek{
+    margin-bottom: 75px;
+}
+#thisWeek, #last{
+    margin-right: 40%;
+    margin-left: 40%;
+}
+
+#thisWeek li, #last li {
+    display: flex;
+    justify-content: space-between;
+    line-height: 30px;
+    
+    
+}
+#calendar ul > li > span{
+    color: var(--yellow);
+    line-height: 30px;
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.mealsO {
+    background-color: #E74973;
+    opacity: 0.2;
+}
+.mealsOO {
+    background-color: #E74973;
+    opacity: 0.43;
+}
+.mealsOOO {
+    background-color: #E74973;
+    opacity: 0.69;
+}
+.mealsOOOO {
+    background-color: #E74973;
+}
+
+
+ @media only screen and (max-width: 750px){
+
+    h1 {
+        font-size: 2em;
+        letter-spacing: 2px;
+    }
+
+    .hamburger{
+        margin-right: 10px;
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+
+    .navStyle{
+        margin-top: 0;
+        top: 0;
+        width: 100%;
+
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    .sparkyEdit img {
+        width: 200px;
+        height: auto;
+        margin-top: 150px;
+    }
+
+    h2{
+       font-size: 48px; 
+    }
+
+    h3{
+        font-size: 32px;
+    }
+
+    /*button work*/
+    #plan h3{
+        cursor: none;
+        transition: color 1.0s ease;
+    }
+    #plan h3:hover{
+        background-color: none;
+        color: var(--yellow);
+    }
+    #plan h3:hover + ul{
+        max-height: none;
+        background-color: none;
+        padding-bottom: none;
+        margin: none;
+        margin-left: none;
+    }
+
+    #plan h3:active{
+        background-color: var(--maroon);
+        color: var(--yellow);
+
+    } 
+    #plan h3:focus-visible + ul{
+        background-color: var(--maroon);    
+        padding-bottom: 10px;
+        margin: 0px;
+        margin-left: 0px; 
+        
+    }
+
+
+
+    /*calendar work*/
+
+    #calendar{
+        scroll-margin-top: 190px;
+    }
+    #calendar > h2 {
+        line-height: 55px;
+        margin-bottom: 30px;
+    }
+
+    #thisWeek{
+        margin-bottom: 50px;
+    }
+    #thisWeek, #last{
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+ } 
