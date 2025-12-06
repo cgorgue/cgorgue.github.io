@@ -33,7 +33,7 @@ body {
     width: 65vw; 
     font-size: 2rem; 
 
-     transition-property: left;
+    transition-property: left;
     transition-duration: 500ms;
     transition-timing-function: cubic-bezier();
 }

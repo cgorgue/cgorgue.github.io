@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./trident.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="finalStyles.css">
+
+    <title>ASU Meal Plan</title>
+</head>
+
+<body> <!--Watched Youtube vid for the hamburger menu: https://www.youtube.com/watch?v=flItyHiDm7E-->
+    <header class="nav-header">
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <h1>ASU Meal Plan</h1>
+    </header>
+
+    <!--NAVIGATION BEGIN-->
+    <nav class="navStyle">
+        <ul>
+            <li><a href="#meals">Meals</a></li>
+            <li><a href="#plan">Current Plan</a></li>
+            <li><a href="#calendar">Calendar</a></li>
+            <li><a href="#MandG">M&G</a></li>
+        </ul>
+    </nav>
+    <!--NAVIGATION END-->
+
+    <!--# of meals-->
+    <div class="container-content">
+        <section class="description" id="meals">
+            <section class="sparkyEdit"><img src="sparky.jpg"></section>
+            <h2>
+                You have
+                7
+                meals left!
+            </h2>
+
+        </section>
+
+
+        <!--Meal planning-->
+        <section class="description" id="plan">
+            <h2>Current meal plan:</h2>
+            <h3 >Gold</h3>
+            <ul>
+                <li>7 meals per week</li>
+                <li>$1,890 per semester</li>
+                <li>$325 M&G</li>
+            </ul>
+            <h2>Upgrade to:</h2>
+            <h3>Maroon</h3>
+            <ul>
+                <li>10 meals per week</li>
+                <li>$2,780 per semester</li>
+                <li>$625 M&G</li>
+            </ul>
+            <h3>Sparky's Favorite</h3>
+            <ul>
+                <li>14 meals per week</li>
+                <li>$3,225 per semester</li>
+                <li>$425 M&G</li>
+                <li>32 Guest Meals</li>
+            </ul>
+            <h3>Unlimited</h3>
+            <ul>
+                <li>Unlimited meals</li>
+                <li>$3,445 per semester</li>
+                <li>$300 M&G</li>
+                <li>48 Guest Meals</li>
+            </ul>
+            <h3>All Maroon & Gold</h3>
+            <ul>
+                <li>$1,425 per semester</li>
+                <li>$1,425 M&G</li>
+            </ul>
+        </section>
+
+        <!--calendar-->
+        <section class="description" id="calendar">
+            <h2>Meal Usage Calendar</h2>
+            <h3>This Week:</h3>
+                <ul id="thisWeek">
+        
+                    <li class="mealsO">
+                        <span class="date">Thu</span>
+                        <span class="meals">0 meals</span>
+                    </li>
+                    <li class="mealsOO">
+                        <span class="date">Fri</span>
+                        <span class="meals">1 meal</span>
+                    </li>
+                    <li class="mealsO">
+                        <span class="date">Sat</span>
+                        <span class="meals">0 meals</span>
+                    </li>
+                    <li class="mealsOOO">
+                        <span class="date">Sun</span>
+                        <span class="meals">2 meals</span>
+                    </li>
+                    <li class="mealsOOOO">
+                        <span class="date">Mon</span>
+                        <span class="meals">3 meals</span>
+                    </li>
+                    <li class="mealsO">
+                        <span class="date">Tue</span>
+                        <span class="meals">0 meals</span>
+                    </li>
+                    <li class="mealsOO">
+                        <span class="date">Wed</span>
+                        <span class="meals">1 meal</span>
+                    </li>
+                </ul>
+            <h3>Last Week:</h3>
+                <ul id="last">
+                    <li class="mealsOO">
+                        <span class="date">Thu</span>
+                        <span class="meals">1 meal</span>
+                    </li>
+                    <li class="mealsOOO">
+                        <span class="date">Fri</span>
+                        <span class="meals">2 meals</span>
+                    </li>
+                    <li class="mealsO">
+                        <span class="date">Sat</span>
+                        <span class="meals">0 meals</span>
+                    </li>
+                    <li class="mealsOOOO">
+                        <span class="date">Sun</span>
+                        <span class="meals">3 meals</span>
+                    </li>
+                    <li class="mealsO">
+                        <span class="date">Mon</span>
+                        <span class="meals">0 meals</span>
+                    </li>
+                    <li class="mealsOO">
+                        <span class="date">Tue</span>
+                        <span class="meals">1 meal</span>
+                    </li>
+                    <li class="mealsO">
+                        <span class="date">Wed</span>
+                        <span class="meals">0 meals</span>
+                    </li>
+                </ul>
+
+
+        </section>
+        <!--M&G-->
+        <section class="description" id="MandG">
+            <section class="sparkyEdit"><img src="sparky.jpg"></section>
+            <h2>You have
+                $325.67
+                left of M&G!
+            </h2>
+        </section>
+    </div>
+<script src="finalScript.js"></script>
+
+</body>
+
+</html>
+
+
